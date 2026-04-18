@@ -37,6 +37,11 @@ function Navbar() {
             </a>
           </li>
           <li className="nav-item">
+            <a href="#education" className="nav-links" onClick={closeMenu}>
+              Education
+            </a>
+          </li>
+          <li className="nav-item">
             <a href="#skills" className="nav-links" onClick={closeMenu}>
               Skills
             </a>
@@ -44,6 +49,11 @@ function Navbar() {
           <li className="nav-item">
             <a href="#projects" className="nav-links" onClick={closeMenu}>
               Projects
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#blogs" className="nav-links" onClick={closeMenu}>
+              Blog Articles
             </a>
           </li>
           <li className="nav-item">
