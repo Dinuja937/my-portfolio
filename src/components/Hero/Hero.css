@@ -23,14 +23,14 @@
   flex: 1;
 }
 
-/* Circular Image Styling with hover effect */
+/* Rectangular Image Styling with hover effect */
 .hero-image {
   width: 300px;
-  height: 300px;
+  height: 380px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 16px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-  border: 6px solid white;
+  border: none;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
