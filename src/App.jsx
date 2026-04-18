@@ -1,14 +1,13 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
 
-      <section id="home" className="section-placeholder">
-        <h1>Hero Section</h1>
-      </section>
+      <Hero />
 
       <section id="about" className="section-placeholder">
         <h2>About Me</h2>
