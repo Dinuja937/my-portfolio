@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
+import Education from './components/Education/Education';
 
 function App() {
   return (
@@ -9,10 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-
-      <section id="education" className="section-placeholder">
-        <h2>Education</h2>
-      </section>
+      <Education />
 
       <section id="skills" className="section-placeholder">
         <h2>Skills</h2>
