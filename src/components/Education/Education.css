@@ -1,6 +1,6 @@
 .education-section {
   padding: 80px 20px;
-  background-color: #f8f9fa; /* slightly different background from about section */
+  background-color: var(--bg-secondary); 
   display: flex;
   justify-content: center;
   min-height: calc(100vh - 80px);
@@ -22,7 +22,7 @@
 .education-card {
   background-color: transparent;
   padding: 30px 0;
-  border-bottom: 1px solid #dcdcdc;
+  border-bottom: 1px solid var(--border-color);
   transition: transform 0.3s ease;
 }
 
@@ -49,19 +49,19 @@
 
 .institution {
   font-size: 1.5rem;
-  color: #333;
+  color: var(--text-primary);
   margin-bottom: 5px;
 }
 
 .degree {
   font-size: 1.1rem;
-  color: #2b5876;
+  color: var(--accent-color);
   font-weight: 500;
 }
 
 .duration-badge {
-  background-color: rgba(43, 88, 118, 0.1);
-  color: #2b5876;
+  background-color: var(--badge-bg);
+  color: var(--badge-text);
   padding: 8px 16px;
   border-radius: 50px;
   font-size: 0.9rem;
@@ -74,18 +74,41 @@
 }
 
 .education-desc {
-  color: #555;
+  color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: 20px;
   text-align: justify;
 }
 
+.domains-title {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.domains-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.domain-item {
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  border: 1px solid #e0e0e0;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #444;
+}
 
 @media screen and (max-width: 768px) {
   .education-header {
     flex-direction: column;
   }
-  
+
   .duration-badge {
     align-self: flex-start;
   }

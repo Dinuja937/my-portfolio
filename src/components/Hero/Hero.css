@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
-  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  background: var(--bg-gradient);
 }
 
 .hero-content {
@@ -23,20 +23,21 @@
   flex: 1;
 }
 
-/* Rectangular Image Styling with hover effect */
+/* Circular Image Styling with hover effect */
 .hero-image {
   width: 300px;
-  height: 380px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-  border: none;
+  border-radius: 50%;
+  box-shadow: 0 15px 35px var(--card-shadow);
+  border: 4px solid var(--border-color);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .hero-image:hover {
   transform: translateY(-15px) scale(1.05);
-  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 25px 45px var(--card-shadow);
+  border-color: var(--accent-color);
 }
 
 .hero-text {
@@ -47,7 +48,7 @@
 
 .hero-greeting {
   font-size: 1.1rem;
-  color: #555;
+  color: var(--text-secondary);
   margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -59,7 +60,7 @@
   font-weight: 800;
   margin-bottom: 15px;
   line-height: 1.2;
-  background: linear-gradient(to right, #2b5876, #4e4376);
+  background: var(--accent-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -67,14 +68,14 @@
 
 .hero-title {
   font-size: 2rem;
-  color: #444;
+  color: var(--text-primary);
   margin-bottom: 25px;
   font-weight: 500;
 }
 
 .hero-tagline {
   font-size: 1.2rem;
-  color: #666;
+  color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: 40px;
 }
@@ -82,7 +83,7 @@
 .hero-buttons {
   display: flex;
   gap: 20px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .btn {
@@ -96,28 +97,29 @@
 }
 
 .btn-primary {
-  background-color: #2b5876;
-  color: white;
-  border: 2px solid #2b5876;
-  box-shadow: 0 10px 20px rgba(43, 88, 118, 0.2);
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: 2px solid var(--accent-color);
+  box-shadow: 0 10px 20px var(--card-shadow);
 }
 
 .btn-primary:hover {
   background-color: transparent;
-  color: #2b5876;
+  color: var(--accent-color);
   transform: translateY(-3px);
-  box-shadow: 0 15px 25px rgba(43, 88, 118, 0.3);
+  box-shadow: 0 15px 25px var(--card-shadow);
 }
 
 .btn-outline {
-  background-color: white;
-  color: #2b5876;
-  border: 2px solid transparent;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--border-color);
+  box-shadow: 0 10px 20px var(--card-shadow);
 }
 
 .btn-outline:hover {
-  border: 2px solid #2b5876;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
   transform: translateY(-3px);
 }
 
