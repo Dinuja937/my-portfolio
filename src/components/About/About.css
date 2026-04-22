@@ -1,7 +1,7 @@
 .about-section {
   min-height: calc(100vh - 80px);
   padding: 80px 20px;
-  background-color: #ffffff;
+  background-color: var(--bg-primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +14,7 @@
 
 .section-title {
   font-size: 2.5rem;
-  color: #2b5876;
+  color: var(--text-primary);
   text-align: center;
   margin-bottom: 50px;
   position: relative;
@@ -26,7 +26,7 @@
   position: absolute;
   width: 60px;
   height: 4px;
-  background-color: #4e4376;
+  background: var(--accent-gradient);
   bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
@@ -42,7 +42,7 @@
 
 .about-text {
   width: 100%;
-  color: #555;
+  color: var(--text-secondary);
   text-align: justify;
 }
 

@@ -1,13 +1,46 @@
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  --text-primary: #333333;
+  --text-secondary: #555555;
+  --accent-color: #2b5876;
+  --accent-gradient: linear-gradient(to right, #2b5876, #4e4376);
+  --border-color: #e0e0e0;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.05);
+  --badge-bg: #eaf1f8;
+  --badge-border: #c2dcf0;
+  --badge-text: #2b5876;
+}
+
+.dark {
+  --bg-primary: #0b1120;
+  --bg-secondary: #0f172a;
+  --bg-gradient: linear-gradient(135deg, #0b1120 0%, #1e293b 100%);
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --accent-color: #38bdf8;
+  --accent-gradient: linear-gradient(to right, #38bdf8, #818cf8);
+  --border-color: #334155;
+  --card-bg: #1e293b;
+  --card-shadow: rgba(0, 0, 0, 0.3);
+  --badge-bg: #0f172a;
+  --badge-border: #334155;
+  --badge-text: #38bdf8;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 body {
-  background-color: #f4f6f8;
-  color: #333;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 .section-placeholder {
@@ -16,7 +49,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 .section-placeholder h1,
