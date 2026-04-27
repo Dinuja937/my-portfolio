@@ -6,7 +6,7 @@ function Education() {
       id: 1,
       edu_level: "BSc. Honours in Software Engineering",
       institution: "University of Kelaniya",
-      duration: "Apr 2021 - Present",
+      duration: "Apr 2024 - Present",
       description: "Specialized in Net-Centric Applications, Business Engineering Applications, Data Science & Engineering Applications, and Health Informatics Application",
     },
 
