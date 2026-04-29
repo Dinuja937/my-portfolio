@@ -16,7 +16,7 @@ function Navbar({ theme, toggleTheme }) {
     <nav className="navbar">
       <div className="navbar-container">
         <a href="#home" className="navbar-logo" onClick={closeMenu}>
-          MyPortfolio
+          Dinuja
         </a>
 
         <div className="navbar-actions">

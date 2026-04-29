@@ -5,6 +5,8 @@ import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Education from './components/Education/Education';
 import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects';
+import Blog from './components/Blog/Blog';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -20,14 +22,9 @@ function App() {
       <About />
       <Education />
       <Skills />
+      <Projects />
 
-      <section id="projects" className="section-placeholder">
-        <h2>Projects</h2>
-      </section>
-
-      <section id="blogs" className="section-placeholder">
-        <h2>Blog Articles</h2>
-      </section>
+      <Blog />
 
       <section id="contact" className="section-placeholder">
         <h2>Contact</h2>
