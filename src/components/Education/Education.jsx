@@ -8,6 +8,7 @@ function Education() {
       institution: "University of Kelaniya",
       duration: "Apr 2024 - Present",
       description: "Specialized in Net-Centric Applications, Business Engineering Applications, Data Science & Engineering Applications, and Health Informatics Application",
+      CGPA: "3.7/4.0",
     },
 
     {
@@ -48,6 +49,10 @@ function Education() {
 
               <div className="education-body">
                 {item.description && <p className="education-desc">{item.description}</p>}
+
+                {item.CGPA && (
+                  <p className="education-desc"><strong>CGPA:</strong> {item.CGPA}</p>
+                )}
 
                 {item.results && (
                   <p className="education-desc"><strong>Results:</strong> {item.results}</p>
