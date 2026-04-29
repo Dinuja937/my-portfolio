@@ -190,9 +190,13 @@
   height: 20px;
 }
 
+.dark .submit-btn {
+  color: #000000;
+}
+
 .dark .submit-btn:hover {
-  background-color: #3b82f6;
-  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.4);
+  background-color: #e0e0e0;
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
 }
 
 .success-message {

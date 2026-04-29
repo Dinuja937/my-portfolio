@@ -6,10 +6,10 @@ function Skills() {
       id: 1,
       category: "Frontend Development",
       skills: [
-        { name: "React.js", logo: "devicon-react-original colored" },
-        { name: "JavaScript", logo: "devicon-javascript-plain colored" },
         { name: "HTML5", logo: "devicon-html5-plain colored" },
         { name: "CSS3", logo: "devicon-css3-plain colored" },
+        { name: "JavaScript", logo: "devicon-javascript-plain colored" },
+        { name: "React.js", logo: "devicon-react-original colored" },
         { name: "Tailwind", logo: "devicon-tailwindcss-original colored" },
       ]
     },
@@ -17,9 +17,9 @@ function Skills() {
       id: 2,
       category: "Backend Development",
       skills: [
+        { name: "Java", logo: "devicon-java-plain colored" },
+        { name: "PHP", logo: "devicon-php-plain colored" },
         { name: "Node.js", logo: "devicon-nodejs-plain colored" },
-        { name: "Express.js", logo: "devicon-express-original" },
-        { name: "Python", logo: "devicon-python-plain colored" }
       ]
     },
     {
