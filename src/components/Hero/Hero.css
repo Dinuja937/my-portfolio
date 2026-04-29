@@ -1,9 +1,9 @@
 .hero-section {
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
   background: var(--bg-gradient);
 }
 
@@ -25,8 +25,8 @@
 
 /* Circular Image Styling with hover effect */
 .hero-image {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 15px 35px var(--card-shadow);
@@ -101,6 +101,10 @@
   color: #ffffff;
   border: 2px solid var(--accent-color);
   box-shadow: 0 10px 20px var(--card-shadow);
+}
+
+.dark .btn-primary {
+  color: #000000;
 }
 
 .btn-primary:hover {

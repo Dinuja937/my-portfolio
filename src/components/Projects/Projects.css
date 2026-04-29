@@ -78,19 +78,29 @@
 
 .project-link {
   background-color: var(--accent-color);
-  color: #fff;
+  color: var(--bg-primary); /* Use background color for the icon so it contrasts with the accent circle */
   width: 45px;
   height: 45px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition: all 0.3s ease;
+}
+
+.dark .project-link {
+  color: #000000; /* Ensure black icon on white circle in dark mode */
 }
 
 .project-link:hover {
-  background-color: #1e3f56;
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
   transform: scale(1.1);
+}
+
+.dark .project-link:hover {
+  background-color: #cccccc;
+  color: #000000;
 }
 
 .project-content {

@@ -1,5 +1,5 @@
 .about-section {
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
   padding: 80px 20px;
   background-color: var(--bg-primary);
   display: flex;

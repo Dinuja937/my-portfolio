@@ -4,14 +4,14 @@
   --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
   --text-primary: #333333;
   --text-secondary: #555555;
-  --accent-color: #2b5876;
-  --accent-gradient: linear-gradient(to right, #2b5876, #4e4376);
+  --accent-color: #000000;
+  --accent-gradient: linear-gradient(to right, #000000, #444444);
   --border-color: #e0e0e0;
   --card-bg: #ffffff;
   --card-shadow: rgba(0, 0, 0, 0.05);
-  --badge-bg: #eaf1f8;
-  --badge-border: #c2dcf0;
-  --badge-text: #2b5876;
+  --badge-bg: #f0f0f0;
+  --badge-border: #d0d0d0;
+  --badge-text: #000000;
 }
 
 .dark {
@@ -20,14 +20,14 @@
   --bg-gradient: linear-gradient(135deg, #0b1120 0%, #1e293b 100%);
   --text-primary: #f8fafc;
   --text-secondary: #cbd5e1;
-  --accent-color: #38bdf8;
-  --accent-gradient: linear-gradient(to right, #38bdf8, #818cf8);
+  --accent-color: #ffffff;
+  --accent-gradient: linear-gradient(to right, #ffffff, #cccccc);
   --border-color: #334155;
   --card-bg: #1e293b;
   --card-shadow: rgba(0, 0, 0, 0.3);
-  --badge-bg: #0f172a;
-  --badge-border: #334155;
-  --badge-text: #38bdf8;
+  --badge-bg: #1a1a1a;
+  --badge-border: #444444;
+  --badge-text: #ffffff;
 }
 
 * {
