@@ -7,6 +7,7 @@ import Education from './components/Education/Education';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
 import Blog from './components/Blog/Blog';
+import Contact from './components/Contact/Contact';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -23,12 +24,8 @@ function App() {
       <Education />
       <Skills />
       <Projects />
-
       <Blog />
-
-      <section id="contact" className="section-placeholder">
-        <h2>Contact</h2>
-      </section>
+      <Contact />
     </div>
   );
 }
