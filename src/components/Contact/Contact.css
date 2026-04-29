@@ -219,7 +219,7 @@
   color: #4caf50;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 960px) {
   .contact-content {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -231,5 +231,13 @@
 
   .info-list {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .info-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
   }
 }

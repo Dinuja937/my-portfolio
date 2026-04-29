@@ -80,8 +80,16 @@
   margin-right: 8px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .skill-header {
+    justify-content: center;
+  }
+  
+  .skill-tags {
+    justify-content: center;
   }
 }
