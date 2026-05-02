@@ -22,7 +22,7 @@ function Hero() {
 
           <div className="hero-buttons">
             <a href="#contact" className="btn btn-primary">Get In Touch</a>
-            <a href="/resume.pdf" className="btn btn-outline" download>Download Resume</a>
+            <a href="https://drive.google.com/drive/folders/1qXrJtsx1GoZH47X2ZFaanUlEwWSq0AOd?usp=drive_link" className="btn btn-outline" target="_blank" rel="noopener noreferrer">Download CV</a>
           </div>
         </div>
       </div>

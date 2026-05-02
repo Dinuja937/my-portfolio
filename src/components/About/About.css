@@ -60,11 +60,12 @@
 }
 
 .highlight-card {
-  background-color: #f8f9fa;
+  background-color: var(--card-bg);
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  border-left: 5px solid #2b5876;
+  box-shadow: 0 4px 15px var(--card-shadow);
+  border: 1px solid var(--border-color);
+  border-left: 5px solid var(--accent-color);
   transition: transform 0.3s ease;
 }
 
@@ -80,12 +81,12 @@
 
 .highlight-card h4 {
   font-size: 1.2rem;
-  color: #333;
+  color: var(--text-primary);
   margin-bottom: 5px;
 }
 
 .highlight-card p {
-  color: #666;
+  color: var(--text-secondary);
   font-size: 1rem;
 }
 

@@ -11,9 +11,37 @@ function Contact() {
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/dinujachamodi@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("Error sending message. Please check your connection.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -69,7 +97,7 @@ function Contact() {
                 <p>Thank you for reaching out. I will get back to you as soon as possible.</p>
               </div>
             ) : (
-              <form className="contact-form" action="https://formsubmit.co/dinujachamodi@gmail.com" method="POST">
+              <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="name">Name</label>
@@ -125,9 +153,13 @@ function Contact() {
                 </div>
 
                 <div className="form-submit-row">
-                  <button type="submit" className="submit-btn">
-                    <FiSend size={18} />
-                    Send Message
+                  <button type="submit" className="submit-btn" disabled={isSubmitting}>
+                    {isSubmitting ? "Sending..." : (
+                      <>
+                        <FiSend size={18} />
+                        Send Message
+                      </>
+                    )}
                   </button>
                 </div>
               </form>
