@@ -1,16 +1,86 @@
-# React + Vite
+# Dinuja Ranaweera - Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and high-performance personal portfolio website built using **React** and **Vite**.
+This portfolio highlights my work as a Software Engineering undergraduate, showcasing my projects, technical skills, education, and certifications.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 **[View Portfolio](https://Dinuja937.github.io/my-portfolio/)**
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Modern UI/UX** – Clean and minimalist design focused on readability and user experience
+* **Dark Mode Support** – Seamless theme switching using CSS variables
+* **Fully Responsive** – Optimized for mobile, tablet, and desktop devices
+* **Dynamic Skills Section** – Visual representation of technologies using Devicon
+* **Projects Showcase** – Highlights key projects with descriptions, tech stacks, and links
+* **Certifications Section** – Displays verified certifications and achievements
+* **AJAX Contact Form** – Functional contact form using FormSubmit without page reloads
+* **Smooth Navigation** – Anchor-based navigation with smooth scrolling
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend**: React.js (v19)
+* **Build Tool**: Vite
+* **Styling**: Vanilla CSS (CSS Variables for theming)
+* **Icons**: React Icons & Devicon
+* **Deployment**: GitHub Pages
+
+## Getting Started
+
+### Prerequisites
+
+* Node.js (v18 or higher)
+* npm 
+
+### Installation
+
+```bash
+git clone https://github.com/Dinuja937/my-portfolio.git
+cd my-portfolio
+npm install
+```
+
+### Running Locally
+
+```bash
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+## Deployment
+
+This project is deployed using **GitHub Pages** with the `gh-pages` package.
+
+To deploy:
+
+```bash
+npm run deploy
+```
+
+## Project Structure
+
+```text
+src/
+├── assets/          # Images and static files
+├── components/      # Reusable UI components
+│   ├── About/
+│   ├── Blog/
+│   ├── Certifications/
+│   ├── Contact/
+│   ├── Education/
+│   ├── Hero/
+│   ├── Navbar/
+│   ├── Projects/
+│   └── Skills/
+├── App.jsx          # Main component
+├── main.jsx         # Entry point
+└── index.css        # Global styles
+```
