@@ -15,9 +15,9 @@
 }
 
 .dark {
-  --bg-primary: #0b1120;
+  --bg-primary: #0f172a;
   --bg-secondary: #0f172a;
-  --bg-gradient: linear-gradient(135deg, #0b1120 0%, #1e293b 100%);
+  --bg-gradient: #0f172a;
   --text-primary: #f8fafc;
   --text-secondary: #cbd5e1;
   --accent-color: #ffffff;

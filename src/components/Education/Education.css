@@ -89,7 +89,7 @@
 
 .domains-title {
   font-size: 1.1rem;
-  color: #333;
+  color: var(--text-primary);
   margin-bottom: 10px;
 }
 
@@ -103,12 +103,18 @@
 }
 
 .domain-item {
-  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
-  border: 1px solid #e0e0e0;
+  background-color: var(--badge-bg);
+  border: 1px solid var(--badge-border);
   padding: 6px 14px;
   border-radius: 8px;
   font-size: 0.9rem;
-  color: #444;
+  color: var(--text-secondary);
+}
+
+.dark .domain-item {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
