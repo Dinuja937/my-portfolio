@@ -7,8 +7,8 @@ function Education() {
       edu_level: "BSc. Honours in Software Engineering",
       institution: "University of Kelaniya",
       duration: "Apr 2024 - Present",
-      description: "Specialized in Net-Centric Applications, Business Engineering Applications, Data Science & Engineering Applications, and Health Informatics Application",
-      CGPA: "3.7/4.0",
+      description: "Specialized in Net-Centric Applications, Data Science & Engineering Applications, and Health Informatics Application",
+      CGPA: "3.72/4.0",
     },
 
     {
