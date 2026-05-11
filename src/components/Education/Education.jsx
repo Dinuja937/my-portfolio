@@ -8,7 +8,7 @@ function Education() {
       institution: "University of Kelaniya",
       duration: "Apr 2024 - Present",
       description: "Specialized in Net-Centric Applications, Data Science & Engineering Applications, and Health Informatics Application",
-      CGPA: "3.72/4.0",
+      CGPA: "3.76/4.0",
     },
 
     {
