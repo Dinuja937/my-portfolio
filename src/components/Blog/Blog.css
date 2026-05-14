@@ -96,3 +96,46 @@
 .blog-card:hover .blog-read-more {
   text-decoration: underline;
 }
+
+.blog-footer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.read-more-btn {
+  padding: 12px 30px;
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.read-more-btn:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px var(--card-shadow);
+}
+
+.dark .read-more-btn:hover {
+  color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .blog-section {
+    padding: 60px 20px;
+  }
+}
