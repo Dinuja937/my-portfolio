@@ -37,6 +37,11 @@ function Navbar({ theme, toggleTheme }) {
             </a>
           </li>
           <li className="nav-item">
+            <a href="#certifications" className="nav-links" onClick={closeMenu}>
+              Certifications
+            </a>
+          </li>
+          <li className="nav-item">
             <a href="#skills" className="nav-links" onClick={closeMenu}>
               Skills
             </a>

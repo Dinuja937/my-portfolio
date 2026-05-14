@@ -1,0 +1,140 @@
+.certifications-section {
+  padding: 80px 20px;
+  background-color: var(--bg-secondary);
+  display: flex;
+  justify-content: center;
+}
+
+.certifications-container {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.cert-card {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 10px 25px var(--card-shadow);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px var(--card-shadow);
+}
+
+.cert-icon-wrapper {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-primary);
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.cert-brand-icon {
+  font-size: 2.5rem;
+}
+
+.cert-overlay-icon {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  color: #ffd700;
+  background-color: var(--bg-primary);
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.cert-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cert-title {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin: 0;
+  font-weight: 700;
+}
+
+.cert-org {
+  font-size: 1rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  margin: 0;
+}
+
+.cert-date {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0 0 10px 0;
+}
+
+.verify-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 6px 16px;
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.verify-btn:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border-color: var(--accent-color);
+}
+
+.dark .verify-btn:hover {
+  color: #000000;
+}
+
+.cert-footer {
+  margin-top: 50px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.cert-footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cert-footer a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .cert-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .verify-btn {
+    margin: 0 auto;
+  }
+}
