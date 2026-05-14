@@ -15,7 +15,7 @@ function Certifications() {
       id: 2,
       title: "Figma Design Basics and Features",
       organization: "Alison",
-      date: "2024",
+      date: "2025",
       link: "https://drive.google.com/file/d/1dqbPmnrFUuLwOMbDxa9fkqhiQ2Z4drUL/view",
       icon: "devicon-figma-plain colored"
     },
@@ -52,11 +52,7 @@ function Certifications() {
 
         <div className="certifications-grid">
           {certificationsData.map((cert) => (
-            <div key={cert.id} className="cert-card fade-in-up">
-              <div className="cert-icon-wrapper">
-                <i className={`${cert.icon} cert-brand-icon`}></i>
-                <FaCertificate className="cert-overlay-icon" />
-              </div>
+            <div key={cert.id} className="cert-card">
               <div className="cert-info">
                 <h3 className="cert-title">{cert.title}</h3>
                 <p className="cert-org">{cert.organization}</p>
@@ -75,7 +71,7 @@ function Certifications() {
         </div>
 
         <div className="cert-footer">
-          <p>More certifications available on my <a href="https://linkedin.com/in/dinujachamodi" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>.</p>
+          <p>More certifications available on my <a href="https://www.linkedin.com/in/dinuja-ranaweera-23a563315/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>.</p>
         </div>
       </div>
     </section>
