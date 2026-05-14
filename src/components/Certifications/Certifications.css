@@ -13,64 +13,43 @@
 .certifications-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 50px;
+  gap: 25px;
+  margin-top: 40px;
 }
 
 .cert-card {
   background-color: var(--card-bg);
-  border-radius: 16px;
-  padding: 30px;
+  border-radius: 12px;
+  padding: 25px;
   display: flex;
-  align-items: center;
-  gap: 20px;
-  box-shadow: 0 10px 25px var(--card-shadow);
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 12px;
+  box-shadow: 0 5px 15px var(--card-shadow);
   border: 1px solid var(--border-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .cert-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px var(--card-shadow);
-}
-
-.cert-icon-wrapper {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--bg-primary);
-  border-radius: 12px;
-  flex-shrink: 0;
-}
-
-.cert-brand-icon {
-  font-size: 2.5rem;
-}
-
-.cert-overlay-icon {
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  color: #ffd700;
-  background-color: var(--bg-primary);
-  border-radius: 50%;
-  padding: 2px;
+  border-color: var(--accent-color);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px var(--card-shadow);
 }
 
 .cert-info {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
+  width: 100%;
 }
 
 .cert-title {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   color: var(--text-primary);
   margin: 0;
   font-weight: 700;
+  line-height: 1.4;
 }
 
 .cert-org {
@@ -91,7 +70,7 @@
   align-items: center;
   gap: 8px;
   width: fit-content;
-  padding: 6px 16px;
+  padding: 8px 20px;
   background-color: transparent;
   color: var(--text-primary);
   border: 1px solid var(--border-color);
@@ -104,12 +83,12 @@
 
 .verify-btn:hover {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: #ffffff !important;
   border-color: var(--accent-color);
 }
 
 .dark .verify-btn:hover {
-  color: #000000;
+  color: #000000 !important;
 }
 
 .cert-footer {
@@ -130,11 +109,6 @@
 
 @media screen and (max-width: 480px) {
   .cert-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .verify-btn {
-    margin: 0 auto;
+    padding: 20px;
   }
 }
