@@ -41,6 +41,8 @@
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
 }
 
 .section-placeholder {
