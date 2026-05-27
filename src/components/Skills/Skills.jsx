@@ -19,7 +19,8 @@ function Skills() {
       skills: [
         { name: "Java", logo: "devicon-java-plain colored" },
         { name: "PHP", logo: "devicon-php-plain colored" },
-        { name: "Node.js", logo: "devicon-nodejs-plain colored" },
+        { name: "Node.js", logo: "devicon-nodejs-plain-wordmark colored" },
+        { name: "Express.js", logo: "devicon-express-original colored" },
       ]
     },
     {
