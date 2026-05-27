@@ -10,6 +10,7 @@ import Projects from './components/Projects/Projects';
 import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import BackToTop from './components/BackToTop/BackToTop';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -29,6 +30,7 @@ function App() {
       <Projects />
       <Blog />
       <Contact />
+      <BackToTop />
       <Footer />
     </div>
   );
