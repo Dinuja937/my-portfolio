@@ -31,6 +31,7 @@
 .skill-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 35px var(--card-shadow);
+  border-color: var(--accent-color);
 }
 
 .skill-header {

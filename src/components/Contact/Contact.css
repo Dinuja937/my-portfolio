@@ -51,6 +51,13 @@
   border-radius: 16px;
   box-shadow: 0 10px 30px var(--card-shadow);
   border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px var(--card-shadow);
+  border-color: var(--accent-color);
 }
 
 .info-heading {
