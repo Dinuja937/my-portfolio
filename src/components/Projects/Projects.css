@@ -8,36 +8,77 @@
 }
 
 .projects-container {
-  max-width: 1100px;
+  max-width: 1200px;
   width: 100%;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
+.projects-carousel {
   margin-top: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.carousel-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--card-bg);
+  color: var(--text-primary);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 12;
+}
+
+.carousel-button:hover {
+  transform: translateY(-50%) translateY(-2px);
+  background-color: var(--border-color);
+}
+
+.carousel-button-left {
+  left: calc(50% - 370px);
+}
+
+.carousel-button-right {
+  right: calc(50% - 370px);
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   background-color: var(--card-bg);
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 25px var(--card-shadow);
   border: 1px solid var(--border-color);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(100% - 40px);
+  max-width: 700px;
+  margin: 0 auto;
+  min-height: calc(45vh);
 }
 
 .project-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 35px var(--card-shadow);
+  border-color: var(--accent-color);
 }
 
 .project-image-container {
   width: 100%;
-  height: 220px;
+  min-width: auto;
+  height: 260px;
   position: relative;
   overflow: hidden;
 }
@@ -46,12 +87,14 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  min-height: 100%;
   transition: transform 0.5s ease;
 }
 
 .project-card:hover .project-image {
   transform: scale(1.1);
 }
+
 
 .project-overlay {
   position: absolute;
@@ -104,10 +147,11 @@
 }
 
 .project-content {
-  padding: 25px;
+  padding: 30px 28px;
   display: flex;
   flex-direction: column;
   flex: 1;
+  width: 100%;
 }
 
 .project-title {
@@ -142,3 +186,66 @@
   border: 1px solid var(--border-color);
   letter-spacing: 0.5px;
 }
+
+.project-indicator {
+  margin-top: 20px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+@media screen and (max-width: 960px) {
+  .projects-carousel {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel-button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .projects-carousel .project-card {
+    order: 2;
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .project-image-container {
+    width: 100%;
+    min-width: auto;
+    height: 220px;
+  }
+
+  .project-content {
+    width: 100%;
+  }
+
+  .carousel-button-left {
+    left: 12px;
+  }
+
+  .carousel-button-right {
+    right: 12px;
+  }
+}
+
+/* When navigated to via anchor (#projects), make the visible project card fill the viewport
+   while accounting for the sticky navbar height (80px) and some padding. */
+.projects-section:target {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.projects-section:target .project-card {
+  min-height: calc(50vh);
+  max-width: 700px;
+  width: calc(100vw - 40px);
+}
+
+@media screen and (max-width: 960px) {
+  .projects-section:target .project-card {
+    min-height: calc(60vh);
+    width: calc(100vw - 40px);
+  }
+}
+
