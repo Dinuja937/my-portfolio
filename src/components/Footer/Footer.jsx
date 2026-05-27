@@ -17,7 +17,7 @@ function Footer() {
             <a href="https://github.com/Dinuja937" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="social-link">
               <FaGithub size={20} />
             </a>
-            <a href="https://linkedin.com/in/dinujachamodi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="social-link">
+            <a href="https://www.linkedin.com/in/dinuja-ranaweera-23a563315/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="social-link">
               <FaLinkedin size={20} />
             </a>
             <a href="https://medium.com/@dinujachamodi" target="_blank" rel="noopener noreferrer" aria-label="Medium" className="social-link">
