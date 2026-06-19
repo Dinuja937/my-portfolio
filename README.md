@@ -5,7 +5,7 @@ This portfolio highlights my work as a Software Engineering undergraduate, showc
 
 ## Live Demo
 
-🔗 **[View Portfolio](https://Dinuja937.github.io/my-portfolio/)**
+🔗 **[View Portfolio](https://dinuja937.github.io/my-portfolio/)**
 
 ## Features
 
