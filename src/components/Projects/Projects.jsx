@@ -5,6 +5,7 @@ import bookfairImage from '../../assets/BookFair.png';
 import univentsImage from '../../assets/UniVents.png';
 import cricketImage from '../../assets/Cricket_League_Website.jpeg';
 import petnestImage from '../../assets/PetNest.png';
+import chatAppImage from '../../assets/Real_Time_Chat_ Application.png';
 
 function Projects() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -38,6 +39,15 @@ function Projects() {
     },
     {
       id: 4,
+      title: "Real-Time Chat Application",
+      description: "Developed a real-time chat application featuring secure JWT authentication, instant messaging, online user presence, cloud image sharing, and responsive React interfaces with REST API integration.",
+      image: chatAppImage,
+      tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Socket.IO", "JWT Authentication", "Tailwind CSS", "DaisyUI", "Zustand", "Axios", "Cloudinary", "REST APIs"],
+      githubLink: "https://github.com/Dinuja937/mern-realtime-chat-app",
+      liveLink: "#"
+    },
+    {
+      id: 5,
       title: "UniVents UI/UX Design",
       description: "A comprehensive user interface and experience design project created in Figma for a university event management platform.",
       image: univentsImage,
